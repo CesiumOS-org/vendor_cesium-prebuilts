@@ -48,6 +48,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.storage_manager.show_opt_in=false
 
+# Offline charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 # OPA configuration
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.opa.eligible_device=true
