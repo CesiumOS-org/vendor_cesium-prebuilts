@@ -77,3 +77,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Include product overlays
 PRODUCT_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
+
+# Inherit from audio config
+$(call inherit-product, vendor/cesium-prebuilts/config/audio.mk)
