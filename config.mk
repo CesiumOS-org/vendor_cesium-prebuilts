@@ -80,3 +80,6 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 # Inherit from audio config
 $(call inherit-product, vendor/cesium-prebuilts/config/audio.mk)
+
+# Inherit from fonts config
+$(call inherit-product, vendor/cesium-prebuilts/config/fonts.mk)
