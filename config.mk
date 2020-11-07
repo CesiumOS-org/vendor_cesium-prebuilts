@@ -17,7 +17,8 @@ LOCAL_PATH := vendor/cesium-prebuilts
 
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
-    SoundPickerPrebuilt
+    SoundPickerPrebuilt \
+    NexusLauncherRelease
 
 # Bootanimation
      PRODUCT_COPY_FILES += $(LOCAL_PATH)/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
@@ -67,3 +68,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.clientidbase=android-google \
     ro.error.receiver.system.apps=com.google.android.gms \
     ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
+
+# Include product overlays
+PRODUCT_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay

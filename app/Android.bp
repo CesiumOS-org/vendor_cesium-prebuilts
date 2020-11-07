@@ -22,3 +22,16 @@ android_app_import {
     presigned: true,
 
 }
+
+android_app_import {
+	name: "NexusLauncherRelease",
+	overrides: ["Launcher3", "Launcher3QuickStep"],
+	apk: "NexusLauncherRelease/NexusLauncherRelease.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
