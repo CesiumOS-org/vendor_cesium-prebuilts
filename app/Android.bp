@@ -32,6 +32,13 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+        required: ["privapp_whitelist_com.google.android.apps.nexuslauncher"],
 	system_ext_specific: true,
 }
 
+prebuilt_etc {
+    name: "privapp_whitelist_com.google.android.apps.nexuslauncher",
+    sub_dir: "permissions",
+    src: "NexusLauncherRelease/com.google.android.apps.nexuslauncher.xml",
+    filename_from_src: true,
+}
