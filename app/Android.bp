@@ -41,4 +41,5 @@ prebuilt_etc {
     sub_dir: "permissions",
     src: "NexusLauncherRelease/com.google.android.apps.nexuslauncher.xml",
     filename_from_src: true,
+    system_ext_specific: true,
 }
