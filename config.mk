@@ -20,7 +20,10 @@ PRODUCT_PACKAGES += \
     SoundPickerPrebuilt \
     NexusLauncherRelease \
     PixelLauncherOverlay \
-    DevicePersonalizationPrebuiltPixel4
+    DevicePersonalizationPrebuiltPixel4 \
+    ViaPrebuilt \
+    GalleryGoPrebuilt \
+    RetroPlayerPrebuilt
 
 # Bootanimation
      PRODUCT_COPY_FILES += $(LOCAL_PATH)/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
