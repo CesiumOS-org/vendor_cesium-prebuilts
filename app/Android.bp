@@ -37,9 +37,37 @@ android_app_import {
 }
 
 prebuilt_etc {
-    name: "privapp_whitelist_com.google.android.apps.nexuslauncher",
-    sub_dir: "permissions",
-    src: "NexusLauncherRelease/com.google.android.apps.nexuslauncher.xml",
-    filename_from_src: true,
-    system_ext_specific: true,
+        name: "privapp_whitelist_com.google.android.apps.nexuslauncher",
+        sub_dir: "permissions",
+        src: "NexusLauncherRelease/com.google.android.apps.nexuslauncher.xml",
+        filename_from_src: true,
+        system_ext_specific: true,
+}
+
+android_app_import {
+	name: "DevicePersonalizationPrebuiltPixel4",
+        apk: "DevicePersonalizationPrebuiltPixel4/DevicePersonalizationPrebuiltPixel4.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+        required: ["privapp_whitelist_com.google.android.as", "google_sysconfig"],
+	product_specific: true,
+}
+
+prebuilt_etc {
+        name: "privapp_whitelist_com.google.android.as",
+        sub_dir: "permissions",
+        src: "DevicePersonalizationPrebuiltPixel4/com.google.android.as.xml",
+        filename_from_src: true,
+        product_specific: true,
+}
+
+prebuilt_etc {
+        name: "google_sysconfig",
+        sub_dir: "sysconfig",
+        src: "DevicePersonalizationPrebuiltPixel4/google.xml",
+        filename_from_src: true,
+        product_specific: true,
 }

@@ -19,7 +19,8 @@ LOCAL_PATH := vendor/cesium-prebuilts
 PRODUCT_PACKAGES += \
     SoundPickerPrebuilt \
     NexusLauncherRelease \
-    PixelLauncherOverlay
+    PixelLauncherOverlay \
+    DevicePersonalizationPrebuiltPixel4
 
 # Bootanimation
      PRODUCT_COPY_FILES += $(LOCAL_PATH)/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
