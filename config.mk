@@ -23,7 +23,8 @@ PRODUCT_PACKAGES += \
     DevicePersonalizationPrebuiltPixel2020 \
     ViaPrebuilt \
     GalleryGoPrebuilt \
-    RetroPlayerPrebuilt
+    RetroPlayerPrebuilt \
+    CameraPrebuilt
 
 # Bootanimation
      PRODUCT_COPY_FILES += $(LOCAL_PATH)/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip

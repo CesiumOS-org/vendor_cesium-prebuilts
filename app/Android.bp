@@ -36,6 +36,21 @@ android_app_import {
 	system_ext_specific: true,
 }
 
+android_app_import {
+        name: "CameraPrebuilt",  
+        overrides: ["Camera2", "Snap", "SnapdragonCamera", "SnapdragonCamera2"],
+        apk: "CameraPrebuilt/CameraPrebuilt.apk",
+        required: ["privapp_whitelist_com.google.android.apps.cameralite"],
+        presigned: true,
+}
+
+prebuilt_etc {
+        name: "privapp_whitelist_com.google.android.apps.cameralite",
+        sub_dir: "permissions",
+        src: "CameraPrebuilt/com.google.android.apps.cameralite.xml",
+        filename_from_src: true,
+}
+
 prebuilt_etc {
         name: "privapp_whitelist_com.google.android.apps.nexuslauncher",
         sub_dir: "permissions",
