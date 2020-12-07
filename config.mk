@@ -20,7 +20,7 @@ PRODUCT_PACKAGES += \
     SoundPickerPrebuilt \
     NexusLauncherRelease \
     PixelLauncherOverlay \
-    DevicePersonalizationPrebuiltPixel4 \
+    DevicePersonalizationPrebuiltPixel2020 \
     ViaPrebuilt \
     GalleryGoPrebuilt \
     RetroPlayerPrebuilt

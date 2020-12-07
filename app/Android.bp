@@ -45,8 +45,8 @@ prebuilt_etc {
 }
 
 android_app_import {
-	name: "DevicePersonalizationPrebuiltPixel4",
-        apk: "DevicePersonalizationPrebuiltPixel4/DevicePersonalizationPrebuiltPixel4.apk",
+	name: "DevicePersonalizationPrebuiltPixel2020",
+        apk: "DevicePersonalizationPrebuiltPixel2020/DevicePersonalizationPrebuiltPixel2020.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -59,7 +59,7 @@ android_app_import {
 prebuilt_etc {
         name: "privapp_whitelist_com.google.android.as",
         sub_dir: "permissions",
-        src: "DevicePersonalizationPrebuiltPixel4/com.google.android.as.xml",
+        src: "DevicePersonalizationPrebuiltPixel2020/com.google.android.as.xml",
         filename_from_src: true,
         product_specific: true,
 }
@@ -67,7 +67,7 @@ prebuilt_etc {
 prebuilt_etc {
         name: "google_sysconfig",
         sub_dir: "sysconfig",
-        src: "DevicePersonalizationPrebuiltPixel4/google.xml",
+        src: "DevicePersonalizationPrebuiltPixel2020/google.xml",
         filename_from_src: true,
         product_specific: true,
 }
